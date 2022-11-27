@@ -1,9 +1,8 @@
 import Profile from './Components/Profile';
-import MyPageNav from './Components/MyPageNav/MyPageNav';
+import MyPageNav from './Components/MyPageNav';
 import Header from './Components/Header';
-import styled from 'styled-components';
-import Calendar from './Components/MyPageNav/Calendar';
-
+import styled from 'styled-components'
+import Calendar from './Calendar';
 
 const MyPageBlock = styled.div`
     width: 100%;
