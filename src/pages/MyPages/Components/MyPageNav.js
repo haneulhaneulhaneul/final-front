@@ -4,7 +4,7 @@ const Navigation = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 100px 0;
+    margin-bottom: 100px;
     padding: 0 200px;
 
      & p {

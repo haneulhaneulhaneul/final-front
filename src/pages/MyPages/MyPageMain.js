@@ -1,4 +1,4 @@
-import Profile from './Components/Profile';
+import Profile from './Components/MyPageTitle';
 import MyPageNav from './Components/MyPageNav';
 import Header from './Components/Header';
 import styled from 'styled-components'
@@ -16,7 +16,6 @@ const MyPageBlock = styled.div`
     .myPageBox {
         width: 1024px;
         height: 50px;
-        background-color: #c7c5f4;
         margin: auto;
     }
 `
@@ -24,14 +23,16 @@ const MyPageBlock = styled.div`
 const MyPage = () => {
 
     return (
+        <>
+        <Header />
         <MyPageBlock>
             <div className='myPageBox'>
-                <Header />
                 <Profile />
                 <MyPageNav />
                 <Calendar />
             </div>
-        </MyPageBlock>    
+        </MyPageBlock>
+        </>    
     )
 }
 export default MyPage;

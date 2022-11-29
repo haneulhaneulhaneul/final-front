@@ -8,15 +8,14 @@ const HeaderContainer = styled.div`
     margin: 0;
     padding: 0;
     z-index: 10;
+    background-color: #c7c5f4;
 
     .headerBox {
-        width: 1024px;
         height: 50px;
-        background-color: #c7c5f4;
-        margin: auto;
     }
 
     .logoBox {
+        float:left;
         margin: 0;
         height: 50px;
     }
@@ -29,6 +28,20 @@ const HeaderContainer = styled.div`
         padding-left: 10px;
     }
 
+    .profileBox {
+        display: inline-block;
+        float: right;
+        margin: 0;
+        height: 50px;
+    }
+
+    .profile {
+        font-size: 1.3em;
+        margin: 0;
+        padding-right: 10px;
+        float: ;
+    }
+
 `
 
 const Header = () => {
@@ -37,6 +50,9 @@ const Header = () => {
             <div className="headerBox">
                 <div className="logoBox">
                     <p className="logo">Dev's</p>
+                </div>
+                <div className="profileBox">
+                    <p className="profile">Profile</p>
                 </div>
             </div>
         </HeaderContainer>
