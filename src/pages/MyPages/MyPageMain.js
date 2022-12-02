@@ -29,7 +29,7 @@ const MyPage = () => {
             <div className='myPageBox'>
                 <Profile />
                 <MyPageNav />
-                <Calendar />
+                <Calendar /> 
             </div>
         </MyPageBlock>
         </>    

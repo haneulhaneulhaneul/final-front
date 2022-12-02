@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href="googleCalendar.html">google login</a>
+    <form action="https://oauth2.googleapis.com/token" method="post" enctype="application/x-www-form-urlencoded">
+        code : <input type="text" namecode value="4/P7q7W91a-oMsCeLvIaQm6bTrgtp7"><br>
+        client_id : <input type="text" name="client_id" value="47359371325-rbeogbgnse216l83cp7jcr3096lpo7f8.apps.googleusercontent.com"><br>
+        client_secret : <input type="text" name="client_secret" value="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"><br>
+        redirect_uri : <input type="text" name="redirect_uri" value="https%3A//oauth2.example.com/code"><br>
+        grant_type : <input type="text" name="grant_type" value="authorization_code"><br>
+    </form>
+</body>
+</html>
+
+POST /token HTTP/1.1
+Host: oauth2.googleapis.com
+Content-Type: application/x-www-form-urlencoded
+
+code=4/P7q7W91a-oMsCeLvIaQm6bTrgtp7&
+client_id=your_client_id&
+client_secret=your_client_secret&
+redirect_uri=https%3A//oauth2.example.com/code&
+grant_type=authorization_code
+
+http://localhost:3000/recieveCode.html?state=state_parameter_passthrough_value&code=4/0AfgeXvvALB52H6DaWcGMEJ2cIkv2VOq75c8TBYeT7XJQ7FNVQ8Uvxst8rJHmH0EQ_6A9Kw&scope=https://www.googleapis.com/auth/calendar.events%20https://www.googleapis.com/auth/calendar

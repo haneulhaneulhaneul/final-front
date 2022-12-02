@@ -39,7 +39,6 @@ const HeaderContainer = styled.div`
         font-size: 1.3em;
         margin: 0;
         padding-right: 10px;
-        float: ;
     }
 
 `
