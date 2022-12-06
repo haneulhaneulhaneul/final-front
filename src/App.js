@@ -9,6 +9,7 @@ import Hashtag from './pages/MyPages/Hashtag';
 import MyStudy from './pages/MyPages/MyStudy';
 import GoogleCalendarLogin from './pages/MyPages/gCalendarLogin';
 import GoogleCalendarCode from './pages/MyPages/gCalendarCode';
+import GoogleCalendar from './pages/MyPages/googleCalendar'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/myStudy" element={<MyStudy />} />
         <Route path="/googleCalendarLogin" element={<GoogleCalendarLogin />} />
         <Route path="/googleCalendarCode" element={<GoogleCalendarCode />} />
+        <Route path="/googleCalendar" element={<GoogleCalendar />} />
       </Routes>
     </Router>
   );  
